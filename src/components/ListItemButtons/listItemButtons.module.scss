@@ -1,0 +1,32 @@
+@import '../../index.scss';
+
+.buttons {
+	border: 1px solid #dddddd;
+	border-radius: 4px;
+	overflow: hidden;
+	display: flex;
+
+	.button {
+		width: 100px;
+		height: 32px;
+		padding: 0;
+		background: #ffffff;
+		border: none;
+		color: $primary-color;
+		cursor: pointer;
+	}
+
+	.active {
+		width: 100px;
+		height: 32px;
+		padding: 0;
+		background-color: $btnBlue-color;
+		border: none;
+		color: #ffffff;
+		cursor: pointer;
+	}
+
+	button:first-of-type {
+		border-right: 1px solid #dddddd;
+	}
+}

@@ -1,0 +1,42 @@
+@import '../../index.scss';
+
+.container {
+	border: 1px solid #c4cdd5;
+	border-radius: 4px;
+	overflow: hidden;
+
+	.buttonContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #ffffff;
+
+		.addButton {
+			width: 100%;
+			max-width: 715px;
+			height: 62px;
+			margin-top: 23px;
+			margin-bottom: 40px;
+			padding: 0;
+			background: #f7f9fb;
+			border: 1px dashed #5f6ec6;
+			box-sizing: border-box;
+			border-radius: 4px;
+			cursor: pointer;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 20px;
+			color: $btnBlue-color;
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.container {
+		margin: 0 0.5rem;
+	}
+
+	.addButton {
+		margin: 0 1rem;
+	}
+}

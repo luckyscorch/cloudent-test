@@ -1,0 +1,93 @@
+@import '../../index.scss';
+
+.content {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	background-color: #ebeef0;
+
+	.navbar {
+		width: 100%;
+		height: 42px;
+		background-color: $secondary-color;
+	}
+
+	.container {
+		width: 100%;
+		max-width: 833px;
+
+		.title {
+			font-size: 25px;
+			color: $secondary-color;
+			font-weight: bold;
+			line-height: 29.3px;
+			margin-top: 31px;
+			margin-bottom: 21px;
+		}
+
+		.notificationBox {
+			display: flex;
+			background-color: #cbd0f0;
+			border-radius: 7px;
+			padding: 0.5rem;
+
+			.helpLogo {
+				width: 24px;
+				height: 24px;
+				padding: 0.5rem;
+				align-self: flex-start;
+				margin-top: 0.5rem;
+			}
+
+			.helpDescription {
+				font-size: 14px;
+				color: $primary-color;
+				font-weight: 400;
+				line-height: 20px;
+			}
+
+			.link {
+				color: $btnBlue-color;
+			}
+		}
+
+		.altTitle {
+			font-weight: bold;
+			font-size: 14px;
+			line-height: 20px;
+			color: $secondary-color;
+			margin-top: 17px;
+			margin-bottom: 12px;
+		}
+
+		.description {
+			font-style: normal;
+			font-weight: normal;
+			font-size: 14px;
+			line-height: 20px;
+			color: $primary-color;
+			margin-bottom: 19px;
+		}
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.title {
+		margin: 0 0.5rem;
+	}
+
+	.notificationBox {
+		margin: 0 0.5rem;
+	}
+
+	.altTitle {
+		margin: 0 0.5rem;
+	}
+
+	.description {
+		margin: 0 0.5rem;
+	}
+}
